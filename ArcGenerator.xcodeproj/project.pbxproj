@@ -13,6 +13,7 @@
 		4D7839A01A36BF970098C3DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D78399F1A36BF970098C3DA /* Images.xcassets */; };
 		4D7839A31A36BF970098C3DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7839A11A36BF970098C3DA /* LaunchScreen.xib */; };
 		4D7839AF1A36BF970098C3DA /* ArcGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7839AE1A36BF970098C3DA /* ArcGeneratorTests.swift */; };
+		4D7839BA1A36BFBC0098C3DA /* ArcGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4D7839A81A36BF970098C3DA /* ArcGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7839AD1A36BF970098C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7839AE1A36BF970098C3DA /* ArcGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcGeneratorTests.swift; sourceTree = "<group>"; };
+		4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,8 @@
 			children = (
 				4D7839981A36BF970098C3DA /* AppDelegate.swift */,
 				4D78399A1A36BF970098C3DA /* ViewController.swift */,
-				4D78399C1A36BF970098C3DA /* Main.storyboard */,
-				4D78399F1A36BF970098C3DA /* Images.xcassets */,
-				4D7839A11A36BF970098C3DA /* LaunchScreen.xib */,
+				4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */,
+				4D7839B81A36BFA40098C3DA /* Resources */,
 				4D7839961A36BF970098C3DA /* Supporting Files */,
 			);
 			path = ArcGenerator;
@@ -110,6 +111,16 @@
 				4D7839AD1A36BF970098C3DA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D7839B81A36BFA40098C3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D78399C1A36BF970098C3DA /* Main.storyboard */,
+				4D78399F1A36BF970098C3DA /* Images.xcassets */,
+				4D7839A11A36BF970098C3DA /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				4D78399B1A36BF970098C3DA /* ViewController.swift in Sources */,
 				4D7839991A36BF970098C3DA /* AppDelegate.swift in Sources */,
+				4D7839BA1A36BFBC0098C3DA /* ArcGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
