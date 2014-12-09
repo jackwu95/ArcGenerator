@@ -9,6 +9,9 @@
 import UIKit
 import Darwin
 
+let WatchSize38mm = CGSize(width: 272, height: 340)
+let WatchSize42mm = CGSize(width: 312, height: 390)
+
 public struct ArcParams {
     // MARK: Appearance
     public var radius: Int
@@ -22,6 +25,7 @@ public struct ArcParams {
     // MARK: Meta
     public var name: String
     public var frameCount: Int
+    public var scale:Int = 2 // Should not need changing (until new watches :])
     
     // MARK: Computed
     public var size: CGSize {
@@ -33,10 +37,18 @@ public struct ArcParams {
         return CGPoint(x: radius + padding, y: radius + padding)
     }
 
-    public init(radius: Int, lineWidth: Int = 6, padding: Int = 10, startAngle: Double = 3.0*M_PI/2.0, clockwise: Bool = true, color: UIColor = UIColor.whiteColor(), name: String = "frame", frameCount: Int = 360) {
-        self.radius = radius
-        self.lineWidth = lineWidth
-        self.padding = padding
+    public init(radius: Int = Int(WatchSize38mm.width) - 20,
+        lineWidth: Int = 6,
+        padding: Int = 10,
+        startAngle: Double = 3.0*M_PI/2.0,
+        clockwise: Bool = true,
+        color: UIColor = UIColor.whiteColor(),
+        name: String = "frame",
+        frameCount: Int = 360) {
+            
+        self.radius = radius * scale
+        self.lineWidth = lineWidth * scale
+        self.padding = padding * scale
         self.startAngle = startAngle
         self.clockwise = clockwise
         self.color = color

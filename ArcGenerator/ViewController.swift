@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let params = ArcParams(radius: 100)
+        let params = ArcParams()
         let generator = ArcGenerator()
         generator.generateArcs(params)
     }

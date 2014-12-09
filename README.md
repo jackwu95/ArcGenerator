@@ -5,7 +5,7 @@ Generate frames for arcs to use in WatchKit!
 
 ###Usage
 ```
-let params = ArcParams(radius: 100)
+let params = ArcParams()
 let generator = ArcGenerator()
 generator.generateArcs(params)
 ```
@@ -14,7 +14,7 @@ Make sure to run the app inside the **Simulator**
 ###Other Params
 Several params are available to customize the generated arc. Set them through the initializer of `ArcParams`
 ```
- public init(radius: Int,
+ public init(radius: Int = Int(WatchSize38mm.width) - 20,
         lineWidth: Int = 6,
         padding: Int = 10,
         startAngle: Double = 3.0*M_PI/2.0,
