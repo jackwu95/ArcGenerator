@@ -37,7 +37,7 @@
 		4D7839A81A36BF970098C3DA /* ArcGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7839AD1A36BF970098C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7839AE1A36BF970098C3DA /* ArcGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcGeneratorTests.swift; sourceTree = "<group>"; };
-		4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcGenerator.swift; sourceTree = "<group>"; };
+		4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ArcGenerator.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +417,7 @@
 				4D7839B41A36BF970098C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D7839B51A36BF970098C3DA /* Build configuration list for PBXNativeTarget "ArcGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				4D7839B71A36BF970098C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
