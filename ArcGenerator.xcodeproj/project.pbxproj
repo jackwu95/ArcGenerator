@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D016DFF1A3AB5EF00A0B5C3 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D016DFE1A3AB5EF00A0B5C3 /* Arc.swift */; };
+		4D016E011A3AB61500A0B5C3 /* ArcAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D016E001A3AB61500A0B5C3 /* ArcAnimation.swift */; };
 		4D7839991A36BF970098C3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7839981A36BF970098C3DA /* AppDelegate.swift */; };
 		4D78399B1A36BF970098C3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78399A1A36BF970098C3DA /* ViewController.swift */; };
 		4D78399E1A36BF970098C3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78399C1A36BF970098C3DA /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D016DFE1A3AB5EF00A0B5C3 /* Arc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
+		4D016E001A3AB61500A0B5C3 /* ArcAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcAnimation.swift; sourceTree = "<group>"; };
 		4D7839931A36BF970098C3DA /* ArcGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7839971A36BF970098C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7839981A36BF970098C3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				4D7839981A36BF970098C3DA /* AppDelegate.swift */,
 				4D78399A1A36BF970098C3DA /* ViewController.swift */,
 				4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */,
+				4D016DFE1A3AB5EF00A0B5C3 /* Arc.swift */,
+				4D016E001A3AB61500A0B5C3 /* ArcAnimation.swift */,
 				4D7839B81A36BFA40098C3DA /* Resources */,
 				4D7839961A36BF970098C3DA /* Supporting Files */,
 			);
@@ -225,6 +231,8 @@
 			files = (
 				4D78399B1A36BF970098C3DA /* ViewController.swift in Sources */,
 				4D7839991A36BF970098C3DA /* AppDelegate.swift in Sources */,
+				4D016DFF1A3AB5EF00A0B5C3 /* Arc.swift in Sources */,
+				4D016E011A3AB61500A0B5C3 /* ArcAnimation.swift in Sources */,
 				4D7839BA1A36BFBC0098C3DA /* ArcGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
