@@ -36,3 +36,5 @@ See `ArcAnimation.swift` to see how the default animations are generated and how
 
 ###Other
 To render animation frames from `UIViews`, check out frosty's [FlipBook](https://github.com/frosty/Flipbook).
+
+ArcGenerator is released under the MIT license.
