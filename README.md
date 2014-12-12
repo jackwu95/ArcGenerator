@@ -18,7 +18,8 @@ Find the terminal output:
 Done generating frames "progress" to path:
 /Users/jackwu/Library/Developer/CoreSimulator/Devices/F5757BEE-CD7C-4A21-883B-174DE61DF38E/data/Containers/Data/Application/2534EC1B-ED76-458F-AC27-7C3B1540E777/Documents/progress
 ```
-Copy/paste the path and type the following into your Terminal
+Copy the path and go to your Terminal.
+Type `open` followed by the path to open the folder
 ```
 open /Users/jackwu/Library/Developer/CoreSimulator/Devices/F5757BEE-CD7C-4A21-883B-174DE61DF38E/data/Containers/Data/Application/2534EC1B-ED76-458F-AC27-7C3B1540E777/Documents/progress
 ```
