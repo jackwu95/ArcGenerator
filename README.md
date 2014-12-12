@@ -2,6 +2,7 @@ ArcGenerator
 ============
 
 Generate frames for arcs to use in WatchKit!
+Created for [WatchKit by Tutorials](http://www.raywenderlich.com/store/watchkit-by-tutorials)
 
 ###Usage
 #### 1. Run ArcGenerator
