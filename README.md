@@ -5,21 +5,16 @@ Generate frames for arcs to use in WatchKit!
 
 ###Usage
 ```
-let params = ArcParams()
 let generator = ArcGenerator()
-generator.generateArcs(params)
+let animation = ArcAnimation.spinningArcAnimation()
+generator.generateArcAnimationFrames(animation)
 ```
 Make sure to run the app inside the **Simulator**
 
-###Other Params
-Several params are available to customize the generated arc. Set them through the initializer of `ArcParams`
-```
- public init(radius: Int = Int(WatchSize38mm.width) - 20,
-        lineWidth: Int = 6,
-        padding: Int = 10,
-        startAngle: Double = 3.0*M_PI/2.0,
-        clockwise: Bool = true,
-        color: UIColor = UIColor.whiteColor(),
-        name: String = "frame",
-        frameCount: Int = 360) 
-```
+Comes with 2 default animations
+
+ * `spinningArcAnimation`
+ * `progressArcAnimation`
+
+###Customizing
+See `ArcAnimation.swift` to see how the default animations are generated.
