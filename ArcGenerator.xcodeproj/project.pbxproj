@@ -69,7 +69,9 @@
 				4D7839AB1A36BF970098C3DA /* ArcGeneratorTests */,
 				4D7839941A36BF970098C3DA /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		4D7839941A36BF970098C3DA /* Products */ = {
 			isa = PBXGroup;

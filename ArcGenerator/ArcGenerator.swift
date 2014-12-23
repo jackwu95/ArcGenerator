@@ -39,7 +39,6 @@ public class ArcGenerator: NSObject {
     println(documentsPath.stringByAppendingPathComponent(arcAnimation.name))
   }
   
-  
   // MARK: Private
   private func saveFrameToDisk(frame: UIImage, name: String, index: Int) {
     let filename = name + String(index) + "@2x.png"
