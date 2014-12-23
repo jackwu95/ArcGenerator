@@ -2,24 +2,39 @@ ArcGenerator
 ============
 
 Generate frames for arcs to use in WatchKit!
+Created for [WatchKit by Tutorials](http://www.raywenderlich.com/store/watchkit-by-tutorials)
 
 ###Usage
+#### 1. Run ArcGenerator
 ```
-let params = ArcParams()
 let generator = ArcGenerator()
-generator.generateArcs(params)
+let animation = ArcAnimation.spinningArcAnimation()
+generator.generateArcAnimationFrames(animation)
 ```
 Make sure to run the app inside the **Simulator**
 
-###Other Params
-Several params are available to customize the generated arc. Set them through the initializer of `ArcParams`
+#### 2. Grab Your Images
+Find the terminal output:
 ```
- public init(radius: Int = Int(WatchSize38mm.width) - 20,
-        lineWidth: Int = 6,
-        padding: Int = 10,
-        startAngle: Double = 3.0*M_PI/2.0,
-        clockwise: Bool = true,
-        color: UIColor = UIColor.whiteColor(),
-        name: String = "frame",
-        frameCount: Int = 360) 
+Done generating frames "progress" to path:
+/Users/jackwu/Library/Developer/CoreSimulator/Devices/F5757BEE-CD7C-4A21-883B-174DE61DF38E/data/Containers/Data/Application/2534EC1B-ED76-458F-AC27-7C3B1540E777/Documents/progress
 ```
+Copy the path and go to your Terminal.
+Type `open` followed by the path to open the folder
+```
+open /Users/jackwu/Library/Developer/CoreSimulator/Devices/F5757BEE-CD7C-4A21-883B-174DE61DF38E/data/Containers/Data/Application/2534EC1B-ED76-458F-AC27-7C3B1540E777/Documents/progress
+```
+
+###Customizing
+
+Comes with 2 default animations
+
+ * `spinningArcAnimation`
+ * `progressArcAnimation`
+
+See `ArcAnimation.swift` to see how the default animations are generated and how you can customize it to make new ones.
+
+###Other
+To render animation frames from `UIViews`, check out frosty's [FlipBook](https://github.com/frosty/Flipbook).
+
+ArcGenerator is released under the MIT license.
