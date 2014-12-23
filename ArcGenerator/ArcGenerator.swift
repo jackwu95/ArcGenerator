@@ -9,8 +9,8 @@
 import UIKit
 import Darwin
 
-let WatchSize38mm = CGSize(width: 272, height: 340)
-let WatchSize42mm = CGSize(width: 312, height: 390)
+let WatchSize38mm = CGSize(width: 136, height: 170)
+let WatchSize42mm = CGSize(width: 156, height: 195)
 
 public class ArcGenerator: NSObject {
   
