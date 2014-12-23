@@ -36,11 +36,7 @@ extension ArcAnimation {
     let initialArc = Arc(radius: 100, lineWidth: 10, padding: 0, startAngle: 3.0*M_PI/2.0, endAngle: 3.0*M_PI/2.0, clockwise: true, color: UIColor.whiteColor())
     
     let animation = ArcAnimation(name: "arc", totalFrames: 360, initialArc: initialArc) { arc, frame, totalFrames in
-      var length = Double(frame+1)/Double(totalFrames) * 2 * M_PI * Double(arc.radius)
-      if length < Double(arc.lineWidth) {
-        length = Double(arc.lineWidth)/2.0
-      }
-      arc.endAngle = length / Double(arc.radius) + arc.startAngle
+      arc.endAngle = Double(frame)/Double(totalFrames-1) * 2 * M_PI + arc.startAngle
       return arc
     }
     
@@ -51,7 +47,6 @@ extension ArcAnimation {
     let length = 0.8 * 2 * M_PI // length is 80% of a circle
     
     let initialArc = Arc(radius: 100, lineWidth: 10, padding: 0, startAngle: 0, endAngle: length, clockwise: true, color: UIColor.whiteColor())
-    
     
     let animation = ArcAnimation(name: "arc", totalFrames: 360, initialArc: initialArc) { arc, frame, totalFrames in
       arc.startAngle = Double(frame)/Double(totalFrames-1) * 2 * M_PI

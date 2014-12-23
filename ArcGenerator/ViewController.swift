@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let animation = ArcAnimation.spinningArcAnimation()
     animation.name = "spinning"
     animation.totalFrames = 120
+    animation.initialArc.drawsEmptyArc = false
     generator.generateArcAnimationFrames(animation)
     
     let animation2 = ArcAnimation.progressArcAnimation()
