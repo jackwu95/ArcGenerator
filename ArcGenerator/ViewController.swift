@@ -17,15 +17,14 @@ class ViewController: UIViewController {
         let generator = ArcGenerator()
         let animation = ArcAnimation.spinningArcAnimation()
         animation.name = "spinning"
-        animation.totalFrames = 120
+        animation.totalFrames = 2
         generator.generateArcAnimationFrames(animation)
         
         let animation2 = ArcAnimation.progressArcAnimation()
         animation2.name = "progress"
-        animation2.totalFrames = 120
+        animation2.totalFrames = 100
         generator.generateArcAnimationFrames(animation2)
     }
-
 
 }
 

@@ -57,7 +57,6 @@ public class Arc {
     }
     
     // MARK: Drawing
-    
     public func stroke() {
         color.setStroke()
         bezierPath().stroke()

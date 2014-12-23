@@ -27,19 +27,14 @@ public class ArcGenerator: NSObject {
     CGContextSetInterpolationQuality(context, kCGInterpolationHigh)
     
     var currentArc = arcAnimation.initialArc
-    for i in 0..<arcAnimation.totalFrames-1 {
+    for i in 0..<arcAnimation.totalFrames {
+      currentArc = arcAnimation.animationStep(arc: currentArc, frame: i, totalFrames: arcAnimation.totalFrames)
       currentArc.stroke()
-      
       saveFrameToDisk(UIGraphicsGetImageFromCurrentImageContext(), name: arcAnimation.name, index: i)
       CGContextClearRect(UIGraphicsGetCurrentContext(), CGRect(origin: CGPointZero, size: arcAnimation.initialArc.size))
-      
-      currentArc = arcAnimation.animationStep(arc: currentArc, frame: i, totalFrames: arcAnimation.totalFrames)
     }
-    // Draw last frame
-    currentArc.stroke()
-    saveFrameToDisk(UIGraphicsGetImageFromCurrentImageContext(), name: arcAnimation.name, index: arcAnimation.totalFrames-1)
-    
     UIGraphicsEndImageContext()
+    
     println("Done generating frames \"\(arcAnimation.name)\" to path:")
     println(documentsPath.stringByAppendingPathComponent(arcAnimation.name))
   }
