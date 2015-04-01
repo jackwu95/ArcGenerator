@@ -88,8 +88,8 @@
 				4D7839981A36BF970098C3DA /* AppDelegate.swift */,
 				4D78399A1A36BF970098C3DA /* ViewController.swift */,
 				4D7839B91A36BFBC0098C3DA /* ArcGenerator.swift */,
-				4D016DFE1A3AB5EF00A0B5C3 /* Arc.swift */,
 				4D016E001A3AB61500A0B5C3 /* ArcAnimation.swift */,
+				4D016DFE1A3AB5EF00A0B5C3 /* Arc.swift */,
 				4D7839B81A36BFA40098C3DA /* Resources */,
 				4D7839961A36BF970098C3DA /* Supporting Files */,
 			);

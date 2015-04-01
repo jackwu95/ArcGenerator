@@ -54,7 +54,7 @@ public class ArcGenerator: NSObject {
   
   private let documentsPath: String = {
     let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-    return paths.first as String
+    return paths.first as! String
     }()
   
 }
